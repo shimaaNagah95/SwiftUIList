@@ -14,6 +14,7 @@
 		8D7BB262237AF61A008E007C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7BB261237AF61A008E007C /* Assets.xcassets */; };
 		8D7BB265237AF61A008E007C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7BB264237AF61A008E007C /* Preview Assets.xcassets */; };
 		8D7BB268237AF61A008E007C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7BB266237AF61A008E007C /* LaunchScreen.storyboard */; };
+		8D7BB26E237AF9C4008E007C /* SwiftUIList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7BB26D237AF9C4008E007C /* SwiftUIList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8D7BB264237AF61A008E007C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D7BB267237AF61A008E007C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D7BB269237AF61A008E007C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D7BB26D237AF9C4008E007C /* SwiftUIList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				8D7BB24D237AF522008E007C /* SwiftUIList.h */,
 				8D7BB24E237AF522008E007C /* Info.plist */,
+				8D7BB26D237AF9C4008E007C /* SwiftUIList.swift */,
 			);
 			path = SwiftUIList;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				TargetAttributes = {
 					8D7BB249237AF522008E007C = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					8D7BB258237AF619008E007C = {
 						CreatedOnToolsVersion = 11.1;
@@ -208,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D7BB26E237AF9C4008E007C /* SwiftUIList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +363,7 @@
 		8D7BB253237AF522008E007C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -373,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.code95.SwiftUIList;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +388,7 @@
 		8D7BB254237AF522008E007C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
